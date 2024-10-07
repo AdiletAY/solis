@@ -1,0 +1,20 @@
+:root {
+  --background: #fff;
+  --foreground: #000;
+
+  --accent: 255, 193, 7;
+
+  --webkit-accent-gradient: -webkit-gradient(linear, left top, right top, from(#FFC107), color-stop(50%, #feaf6e), to(#f1db5e));
+  --accent-gradient: linear-gradient(to right, #FFC107 0%, #feaf6e 50%, #f1db5e 100%);
+
+  --webkit-line-accent-gradient: -webkit-gradient(linear, left top, left bottom, from(#feaf6e), to(#f0fe6e));
+  --line-accent-gradient: linear-gradient(#feaf6e 0%, #f0fe6e 100%);
+
+  --webkit-secondary-gradient: -webkit-gradient(linear, left top, right top, from(#33c8c1), color-stop(50%, #119bd2), to(#33c8c1));
+  --secondary-gradient: linear-gradient(to right, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
+
+  --primary: 40, 50, 120;
+  --primary-foreground: #fff;
+  --secondary: yellow;
+  --secondary-foreground: #fff;
+}
