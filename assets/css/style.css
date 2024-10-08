@@ -992,9 +992,9 @@ p {
   transition: all 0.3s ease-out 0s;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1024px) {
   .single-services .services-content .services-title a {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
