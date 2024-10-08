@@ -12,16 +12,12 @@
   margin: 30px auto;
   overflow: hidden;
   position: relative;
-  width: 960px;
+  width: 100%;
 }
 
 .brand_slider::before,
 .brand_slider::after {
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
   height: 100px;
   position: absolute;
@@ -49,4 +45,18 @@
 .brand_slide {
   height: 100px;
   width: 250px;
+}
+
+@media only screen and (min-width: 425px) {
+  .brand_slider::before,
+  .brand_slider::after {
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .brand_slider::before,
+  .brand_slider::after {
+    width: 100px;
+  }
 }
