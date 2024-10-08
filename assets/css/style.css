@@ -962,10 +962,14 @@ p {
   transition: all 0.4s ease-out 0s;
 }
 
+.shape {
+  opacity: 0.1;
+}
+
 .single-services .services-icon .shape-1 {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 49%;
+  left: 53%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
