@@ -163,6 +163,19 @@ p {
   }
 }
 
+@media (max-width: 375px) {
+  .main-btn {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-btn {
+    padding: 0 16px;
+  }
+}
+
 /*===== All Section Title Style =====*/
 .section-title .line {
   background: var(--webkit-line-accent-gradient);
@@ -1095,6 +1108,12 @@ p {
   background-position: right center;
 }
 
+@media (max-width: 320px) {
+  .about-content .main-btn {
+    padding: 0 16px;
+  }
+}
+
 /* ==========================================================================
    Blog section
    ========================================================================== */
@@ -1506,6 +1525,22 @@ p {
   .link-wrapper {
     padding: 0;
     padding-right: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .link-wrapper {
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .link-wrapper {
+    padding-right: 20px;
+  }
+
+  .link-wrapper:last-child {
+    padding-right: 0;
   }
 }
 
