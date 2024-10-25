@@ -1,4 +1,29 @@
+
+const navigationElement = document.querySelector('#navigation');
+const burgerCloseButton = document.querySelector('#burger_close');
+const burgerOpenButton = document.querySelector('#burger_btn');
+const navigationLinks = navigationElement.querySelectorAll('a');
 const tabs = document.querySelectorAll(".tab");
+
+const burgerMenuOpen = (e) => {
+
+  navigationElement.setAttribute('data-opened', 'true')
+  document.body.classList.add('overflow-hidden')
+
+}
+
+const burgerMenuClose = (e) => {
+
+  navigationElement.setAttribute('data-opened', 'false')
+  document.body.classList.remove('overflow-hidden')
+
+}
+
+burgerOpenButton.addEventListener('click', burgerMenuOpen);
+burgerCloseButton.addEventListener('click', burgerMenuClose);
+navigationLinks.forEach(l => {
+  l.addEventListener('click', burgerMenuClose);
+});
 
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
